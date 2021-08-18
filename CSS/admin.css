@@ -1,0 +1,23 @@
+#addImage {
+    float: left;
+}
+
+#buttonOfAdd {
+    float: right;
+}
+
+.newsText {
+    float: left;
+}
+
+.buttonText {
+    float: right; 
+}
+
+.adminAddImage {
+    position: relative;
+}
+
+.adminAddNews {
+    position: relative;
+}
