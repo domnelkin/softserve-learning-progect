@@ -163,17 +163,23 @@ p {
 .lastWin {
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 100%;
+}
+
+.tableWin {
+    width: 50%;
+    margin: auto;
+    text-align: center;
 }
 
 footer {
     margin: 0;
     padding: 0;
-   background-color :#ecc100ad;
-   width: 100%;
-   height: 60px;
-   position: relative;
-   bottom: 0;
+    background-color :#ecc100ad;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    bottom: 0;
 }
 
 @media (max-width: 1000px){
@@ -210,16 +216,3 @@ footer {
     }
   }
 
-  @keyframes body {
-    0% {
-        background-image: url(../image/46bcaedde50ee768_1920xH.jpg);
-    }
-
-    50% {
-        background-image: url(../image/318522692462134.jpg);
-    }
-
-    100% {
-        background-image: url(../image/download33.png);
-    }
-}
