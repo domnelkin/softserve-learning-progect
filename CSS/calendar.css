@@ -1,0 +1,32 @@
+.funnyImg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    z-index: 50;
+}
+
+.table {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: o auto;
+    width: 40%;
+    font-size: 40px;
+    color: rgb(255, 208, 0);
+    z-index: 100;
+}
+
+table {
+    border-collapse: collapse;
+    /*убираем пустые промежутки между ячейками*/
+    border: 1px solid grey;
+    /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
+    width: 900px;
+    background-color: rgba(58, 58, 58, 0.267);
+ }
+
+ th, td {
+    border: 1px solid grey;
+ }
