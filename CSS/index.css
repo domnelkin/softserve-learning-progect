@@ -171,6 +171,11 @@ p {
     width: 50%;
     margin: auto;
     text-align: center;
+    margin-left: 20%;
+}
+
+.tableWin td {
+    width: 70%;
 }
 
 footer {
