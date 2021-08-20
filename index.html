@@ -12,14 +12,15 @@
     <div id="container">
     <header>
     <nav class = "menu">
-    <button id="burger-btn"><img src="./image/hamburger-menu.png" alt=""></button>
-    <ul>
-        <li><a href="index.html" target="_self">Main</a></li>
-        <li id="window">
+    <div class="burgerBtn">
+        <input class="burger-btn" id="check" type="checkbox" style="opacity:0"></input>
+        <label for="check"><img src="./image/hamburger-menu.png" class="burger"></label>
+    <ul class="main-navigation">
+        <li>
+            <a href="index.html" target="_self">Main</a></li>
+        <li>
             <div class="dropdown">
-                <form action="matches.html">
-                    <button class="dropbtn">Matches</button>
-                </form>
+                    <a class="dropbtn" href="matches.html">Matches</a>
                     <div class="dropdown-content">
                         <a href="calendar.html">Calendar of matches</a>
                         <a href="nextgame.html">Next game</a>
@@ -32,6 +33,7 @@
         <li><a href="contacts.html" target="_self">Contacts</a></li>
         <li><a href="admin.html" target="_self">Admin</a></li>
     </ul>
+</div>
 </nav>
     <div class="logo">
         <a href="index.html">
@@ -39,6 +41,7 @@
         </a>
       </div>
 </header>
+<main>
     <div class="mainContent">
     <div class="mainPhoto">
         <img src="./image/1200px-Manchester_United_FC_crest.svg.png" alt="team">
@@ -68,6 +71,7 @@
     </table>
 </div>
 </div>
+</main>
 <footer>
     <a href="#">UP</a>
 </footer>
