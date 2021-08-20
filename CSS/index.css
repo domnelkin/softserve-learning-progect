@@ -8,6 +8,7 @@ body {
     background-image: url(../image/3200x2400_angle-triangle-yellow-gray-minimalism.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-attachment: fixed
 }
 
 #container {
