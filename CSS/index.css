@@ -1,10 +1,11 @@
 /* this css file for index.html in the future */
 body {
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(255, 255, 255);
     margin:0;
     padding:0;
     height:100%;
-    background-image: url(../image/y2h24ytzs6yf.jpg);
+    /* background-image: url(../image/y2h24ytzs6yf.jpg); */
+    background-image: url(../image/3200x2400_angle-triangle-yellow-gray-minimalism.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -36,7 +37,7 @@ main {
 .mainContent {
     padding: 0 10%;
     position: relative;
-    margin-top: 65px;
+    margin-top: 70px;
   }
 
 .mainPhoto img {
@@ -70,6 +71,8 @@ p {
     color: #ecc100ad; 
     font-size:30px; 
     padding: 1px; 
+    border: 5px black;
+    text-shadow: 1px 1px 1px rgb(121, 103, 22);
 }
 
 .lastWin {
