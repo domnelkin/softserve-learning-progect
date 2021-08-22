@@ -8,7 +8,6 @@ body {
     background-image: url(../image/3200x2400_angle-triangle-yellow-gray-minimalism.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-attachment: fixed
 }
 
 #container {
@@ -91,6 +90,31 @@ p {
 
 .tableWin td {
     width: 70%;
+}
+
+.aboutPlayers {
+    display: grid;
+    grid-template-columns: 35% 60%;
+
+}
+
+.aboutPlayers .photoPlayer {    
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    height: 160px;
+    line-height: 160px;
+    text-align: center;
+    width: 240px;}
+.photoPlayer a img {
+    vertical-align: middle;
+    max-width: 100% !important;
+    width: 35%;
+    max-height: 20%; }
+
+.aboutPlayers .playerInfo {
+    padding: 1em;
+    background-color: #ecc100ad;
 }
 
 @media (max-width: 1024px){

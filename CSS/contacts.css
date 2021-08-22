@@ -1,0 +1,12 @@
+.contactUs {
+    display: grid;
+    grid-template-columns: 30% 60%;
+    padding-left: 5%;
+    padding-top: 10%;
+    padding-right: 5%;
+    grid-column-gap: 30%;
+}
+
+.contactUs .contact {
+background-color: #ecc100ad;
+}
