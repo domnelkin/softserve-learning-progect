@@ -10,13 +10,6 @@ body {
     background-repeat: no-repeat;
 }
 
-#container {
-    position: relative;
-    margin: 0;
-    height: 100%;
-    width: 100%;
- }
-
 .getapp-nav-img{
     height: 70px;
     width: 70px;
@@ -90,6 +83,7 @@ p {
 
 .tableWin td {
     width: 70%;
+    font-size: 200px;
 }
 
 .aboutPlayers {
@@ -106,7 +100,7 @@ p {
     line-height: 160px;
     text-align: center;
     width: 240px;}
-.photoPlayer a img {
+.photoPlayer img {
     vertical-align: middle;
     max-width: 100% !important;
     width: 35%;
