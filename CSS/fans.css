@@ -1,3 +1,14 @@
+body {
+    background-color: rgb(255, 255, 255);
+    margin:0;
+    padding:0;
+    height:100%;
+    /* background-image: url(../image/y2h24ytzs6yf.jpg); */
+    background-image: url(../image/wall_paint_texture_153863_3840x2160.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
 textarea {
     background: #fce9c0; 
     border: 1px solid #070704; 
@@ -6,4 +17,16 @@ textarea {
     height: 200px; 
     box-sizing: border-box; 
     font-size: 14px; 
+   }
+
+   .mainContent {
+       margin-top: 5%;
+   }
+
+   .dateCommemt {
+       float: left;
+   }
+
+   .footballFan {
+       float: right;
    }
