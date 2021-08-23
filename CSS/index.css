@@ -61,11 +61,10 @@ main {
 p {
     text-align: justify;
     font-family: fantasy; 
-    color: #ecc100ad; 
+    color: #000000ad; 
     font-size:30px; 
     padding: 1px; 
     border: 5px black;
-    text-shadow: 1px 1px 1px rgb(121, 103, 22);
 }
 
 .lastWin {
@@ -88,11 +87,13 @@ p {
 
 .aboutPlayers {
     display: grid;
-    grid-template-columns: 35% 60%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+  }
 
-}
-
-.aboutPlayers .photoPlayer {    
+.aboutPlayers .photoPlayer {  
+    grid-column: 1 / 3;
+    grid-row: 1;  
     overflow: hidden;
     background-color: #ffffff;
     border: 1px solid #999999;
@@ -107,6 +108,8 @@ p {
     max-height: 20%; }
 
 .aboutPlayers .playerInfo {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
     padding: 1em;
     background-color: #ecc100ad;
 }

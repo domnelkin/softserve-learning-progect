@@ -14,7 +14,7 @@
       <header>
         <nav class = "menu">
         <div class="burgerBtn">
-            <input class="burger-btn" id="check" type="checkbox" style="opacity:0"></input>
+            <input class="burger-btn" id="check" type="checkbox" style="opacity:0">
             <label for="check"><img src="./image/hamburger-menu.png" class="burger"></label>
         <ul class="main-navigation">
             <li>
@@ -43,32 +43,8 @@
           </div>
           </div>
           <div class="line"></div>
-          <div class="fab">
-            <span class="fab-action-button">
-                  <i class="fab-action-button__icon"></i>
-              </span>
-            <ul class="fab-buttons">
-              <li class="fab-buttons__item">
-                <a href="#" class="fab-buttons__link" data-tooltip="Facebook">
-                  <i class="icon-material icon-material_fb"></i>
-                </a>
-              </li>
-              <li class="fab-buttons__item">
-                <a href="#" class="fab-buttons__link" data-tooltip="Twitter">
-                  <i class="icon-material icon-material_tw"></i>
-                </a>
-              </li>
-              <li class="fab-buttons__item">
-                <a href="#" class="fab-buttons__link" data-tooltip="Linkedin">
-                  <i class="icon-material icon-material_li"></i>
-                </a>
-              </li>
-              <li class="fab-buttons__item">
-                <a href="#" class="fab-buttons__link" data-tooltip="Google+">
-                  <i class="icon-material icon-material_gp"></i>
-                </a>
-              </li>
-            </ul>
+          <div>
+            <a class="up-button" href="#">^</a>
           </div>
     </header>
     <div class="mainContent">
@@ -97,7 +73,31 @@
             </form>
           </div>
         </div>
+        <div class="line"></div>
+        <div class="wrapper">
+        <div class="add-comments">
+          <form action="handler.php">
+            <p><strong>Your name:</strong></p>
+            <p><input class="your-name" maxlength="25" size="40" placeholder="Name"></p>
+           </form>
+          <form action="handler.php">
+            <p><b>Your comment:</b></p>
+            <p><textarea name="comment" placeholder="Your comment"></textarea></p>
+            <p><input class="submit-coment" type="submit"></p>
+           </form>
+        </div>
+        <div class="comments">
+          <p><strong>Comments:</strong></p>
+            <div class="name-comment">Devid</div>
+            <div class="about-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet adipisci enim doloribus quaerat explicabo dolor commodi, neque laudantium unde illo nemo eius iusto quibusdam animi magni ex quod dolore incidunt!</div>
+            <p class="dateComment">12.12.2020 13:56</p>
+          
+            <div class="name-comment">Alex</div>
+            <div class="about-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quo reiciendis dolores sint, similique explicabo sunt quae, beatae obcaecati commodi voluptate provident laboriosam voluptatem laudantium labore? Quibusdam laboriosam vero placeat!</div>
+            <p class="dateComment">12.12.2020 14:34</p>
+          </div>
     </div>
+
     <footer>
         <a href="#">UP</a>
     </footer>
