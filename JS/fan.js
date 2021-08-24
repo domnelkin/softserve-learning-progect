@@ -31,10 +31,10 @@ function loadComments(){
 function showComments (){
     let commentField = document.getElementById('comment-field');
     let out = '';
-    comments.forEach(function(item){
-        out += `<p class="text-right small"><em>${timeConverter(item.time)}</em></p>`;
-        out += `<p class="alert alert-primary" role="alert">${item.name}</p>`;
-        out += `<p class="alert alert-success" role="alert">${item.body}</p>`;
+    comments.forEach(function(item) {
+        out += `<p class="comment-author" role="alert">${item.name}</p>`;
+        out += `<p class="comment-content" role="alert">${item.body}</p>`;
+        out += `<p class="comment-date"><em>${timeConverter(item.time)}</em></p>`;
     });
     commentField.innerHTML = out;
 }

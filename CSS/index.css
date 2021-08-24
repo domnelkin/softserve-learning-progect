@@ -1,11 +1,10 @@
 /* this css file for index.html in the future */
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 232, 132);
     margin:0;
     padding:0;
-    height:100%;
     /* background-image: url(../image/y2h24ytzs6yf.jpg); */
-    background-image: url(../image/3200x2400_angle-triangle-yellow-gray-minimalism.jpg);
+    background-image: url(../image/svezheskoshennoj-travy.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -31,7 +30,29 @@ main {
     padding: 0 10%;
     position: relative;
     margin-top: 70px;
+    margin-bottom: 14%;
+    margin-top: 9%;
   }
+
+  /* Background battom img */
+
+  .button-img {
+   background-image: url(../image/svezheskoshennoj-travy.jpg);
+   margin-top: -600px;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   background-position: bottom;
+   height: 1%;
+   text-align: -webkit-center;
+  }
+
+  .button-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+  }
+
+/*   Logo main page */
 
 .mainPhoto img {
     display: block;
@@ -74,50 +95,83 @@ p {
 }
 
 .tableWin {
-    width: 50%;
-    margin: auto;
-    text-align: center;
-    margin-left: 20%;
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid rgba(128, 119, 0, 0.342);
 }
 
 .tableWin td {
     width: 70%;
-    font-size: 200px;
+    font-size: 30px;
+    text-align: center;
+    backdrop-filter: blur(1px);
 }
 
-.aboutPlayers {
+.tableWin td, th {
+    color: wheat;
+}
+
+.manchester {
+    width: 5%;
+    height: 5%;
+}
+
+.aboutplayers {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 200px;
+    margin-top: 3%;
+    grid-template-columns: repeat(2, 50%); 
+    gap: 3% ;
+    width: 100%;
+    overflow: hidden;
   }
 
-.aboutPlayers .photoPlayer {  
-    grid-column: 1 / 3;
-    grid-row: 1;  
-    overflow: hidden;
-    background-color: #ffffff;
-    border: 1px solid #999999;
-    height: 160px;
-    line-height: 160px;
-    text-align: center;
-    width: 240px;}
-.photoPlayer img {
-    vertical-align: middle;
-    max-width: 100% !important;
-    width: 35%;
-    max-height: 20%; }
-
-.aboutPlayers .playerInfo {
-    grid-column: 2 / 4;
-    grid-row: 1 / 3;
-    padding: 1em;
-    background-color: #ecc100ad;
+.aboutplayers div {  
+    width: 100%;
+    height: 100%;
 }
+
+.aboutplayers img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.aboutplayers p {
+    font-size: 20px;
+}
+
+.playerInfo {
+    padding: 2% 2% 0 2%;
+    background-color: khaki;
+}
+
+@media (max-width: 1900px){
+    .mainContent {
+        padding: 0 10%;
+        position: relative;
+        margin-top: 70px;
+        margin-bottom: 14%;
+        margin-top: 12%;
+      } }
+ 
+@media (max-width: 850px){
+    .tableWin td {
+        font-size: 20px;
+    }
+}   
+
+@media (max-width: 850px){
+    .tableWin td {
+        font-size: 10px;
+    }
+} 
 
 @media (max-width: 1024px){
 
     body {
-        background-image: none;
+        background-size: cover;
+        background-color: rgb(175, 108, 0);
     }
 
     h1 {
@@ -127,7 +181,13 @@ p {
     p {
         text-align:justify;
         font-size: 10px;
+        color: wheat;
     }
+
+    .button-img {
+        display: none;
+    }
+
   }
 
 

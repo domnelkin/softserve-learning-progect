@@ -11,8 +11,9 @@ body {
 
 .wrapper {
     display: grid;
+    padding: 5%;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    gap: 3%;
     grid-auto-rows: minmax(100px, auto);
   }
 
@@ -40,7 +41,7 @@ textarea {
    .your-name {
     background: #e0e0e0; 
     border: 1px solid #818181; 
-    padding: 10px; 
+    padding: 1%; 
     width: 50%; 
     box-sizing: border-box; 
     font-size: 14px; 
@@ -66,21 +67,33 @@ textarea {
     margin-bottom: 2%;
    }
 
-   .about-comment {
+   .about-comment .comment-date {
+       margin-bottom: 3%;
+   }
+
+   .about-comment .comment-author {
     background: #e0e0e0; 
     border: 1px solid #818181; 
-    padding: 10px; 
+    padding: 2%; 
     width: 100%; 
-    height: 200px; 
+    height: 100%; 
     box-sizing: border-box; 
     font-size: 14px; 
     border-radius: 10px;
     margin-bottom: 2%;
-   }
+}
 
-   .mainContent {
-       margin-top: 5%;
-   }
+.about-comment .comment-content {
+    background: #e0e0e0; 
+    border: 1px solid #818181; 
+    padding: 2% 2% 10% 2%;
+    width: 100%; 
+    height: 100%; 
+    box-sizing: border-box; 
+    font-size: 14px; 
+    border-radius: 10px;
+    margin-bottom: 1.5%;
+}
 
    .dateCommemt {
        float: left;
@@ -89,3 +102,4 @@ textarea {
    .footballFan {
        float: right;
    }
+   

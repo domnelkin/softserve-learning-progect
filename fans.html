@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <title></title>
     <link rel="stylesheet" type="text/css" href="./CSS/style.css">
     <link rel="stylesheet" type="text/css" href="./CSS/fans.css">
@@ -47,60 +46,28 @@
             <a class="up-button" href="#">^</a>
           </div>
     </header>
-    <div class="mainContent">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2 class="text-center">
-              Comments
-            </h2>
-          </div>
-          <div class="col-lg-6">
-            <div id="comment-field"></div>
-          </div>
-          <div class="col-lg-6">
-            <form>
-              <div class="form-group">
-                <label for="comment-name">Name:</label>
-                <input type="email" class="form-control" id="comment-name"  placeholder="Enter your name">
-              </div>
-              <div class="form-group">
-                <label for="comment-body">Comment:</label>
-                <textarea type="password" class="form-control" id="comment-body" placeholder="comment"></textarea>
-              </div>
-              <div class="form-group form-check text-right">
-                <button type="submit" id="comment-add" class="btn btn-primary">add Comment</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="line"></div>
+    <main class="mainContent">
         <div class="wrapper">
         <div class="add-comments">
-          <form action="handler.php">
+          <form>
             <p><strong>Your name:</strong></p>
-            <p><input class="your-name" maxlength="25" size="40" placeholder="Name"></p>
+            <p><input class="your-name" id="comment-name" maxlength="25" size="40" placeholder="Name"></p>
            </form>
-          <form action="handler.php">
+          <form>
             <p><b>Your comment:</b></p>
-            <p><textarea name="comment" placeholder="Your comment"></textarea></p>
-            <p><input class="submit-coment" type="submit"></p>
+            <p><textarea name="comment" id="comment-body" placeholder="Your comment"></textarea></p>
+            <p><button class="submit-coment" id="comment-add" type="submit" >Submit</button></p>
            </form>
         </div>
         <div class="comments">
           <p><strong>Comments:</strong></p>
-            <div class="name-comment">Devid</div>
-            <div class="about-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet adipisci enim doloribus quaerat explicabo dolor commodi, neque laudantium unde illo nemo eius iusto quibusdam animi magni ex quod dolore incidunt!</div>
-            <p class="dateComment">12.12.2020 13:56</p>
-          
-            <div class="name-comment">Alex</div>
-            <div class="about-comment">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quo reiciendis dolores sint, similique explicabo sunt quae, beatae obcaecati commodi voluptate provident laboriosam voluptatem laudantium labore? Quibusdam laboriosam vero placeat!</div>
-            <p class="dateComment">12.12.2020 14:34</p>
-          </div>
-    </div>
-
-    <footer>
-        <a href="#">UP</a>
-    </footer>
+            <div class="about-comment" id="comment-field"></div>
+        </main>
+        <footer>
+          <div class="line-footer"></div>
+          <a href="#"></a>
+      </footer>
+        </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="./JS/fan.js"></script>
 </body>
