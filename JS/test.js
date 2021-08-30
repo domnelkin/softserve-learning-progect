@@ -41,3 +41,32 @@ newListElements.forEach(el =>  {
 for(let i = 0; i < newListElements.length - 1; i++) {
     newListElements[i].after(", ");
 }
+
+// ------------------------------------------------------------------
+
+const list1 = document.getElementById('list_1');
+
+const listElementsCollection = list1.children;
+
+const listElementsArray = Array.from(listElementsCollection);
+
+const elementsContentList = listElementsArray.map(el => el.textContent);
+
+console.log(`${elementsContentList[0]}, ${elementsContentList[4]}, ${elementsContentList[1]}, ${elementsContentList[3]}, ${elementsContentList[2]}`)
+
+let first = 0;
+let last = elementsContentList.length - 1;
+let output = "";
+
+for (let i = 0; i < elementsContentList.length; i++) {
+    if(first != last) {
+        output += `${elementsContentList[first]}, ${elementsContentList[last]}, `;
+        first++;
+        last--;
+    } else {
+        output += `${elementsContentList[first]}`;
+        break;
+    }
+}
+
+console.log(output);
